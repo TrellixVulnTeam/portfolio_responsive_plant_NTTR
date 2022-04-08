@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/0d2aff3f7f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./scss/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <i class="fa-solid fa-clover nav__logo-icon"></i>
+                plantshop
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link active-link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#product" class="nav__link active-link">Product</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#faqs" class="nav__link active-link">FAQs</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link active-link">Contact US</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+                <i class="fa-solid fa-moon change-theme " id="theme-button" ></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- END HEADER -->
+
+    <main class="main">
+        <!-- HOME -->
+        <section class="home" id="home">
+            <div class="home__container container grid">
+                <img src="/assets/img/home.png" alt="" class="home__img">
+
+                <div class="home__data">
+                    <h1 class="home__title">
+                        누구나 쉽게<br>키울수 있는 식물<br> 당신의 삶을 <br>더 풍요롭게 해보세요
+                    </h1>
+                    <p class="home__description">
+                        실내에서 식물을 키우면 식물의 공기정화 능력을 통해 공기의 질을 개선, 온습도 조절, 심미적 효과까지 다양한 순기능을 기대해보세요
+                    </p>
+                    <a href="#about" class="button button--flex">
+                       Wood stand <i class="fa-solid fa-arrow-right button__icon"></i>
+                    </a>
+                </div>
+
+                <div class="home__social">
+                    <span class="home__social-follow">Follow us</span>
+
+                    <div class="home__social-links">
+                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END HOME -->
+
+        <!-- ABOUT -->
+        <section class="about section container" id="about">
+            <div class="about__container grid">
+                <img src="./assets/img/about.png" alt="" class="about__img">
+
+                <div class="about__data">
+                    <h2 class="section__title about__title">
+                        우리를 선택하는 이유
+                    </h2>
+
+                    <p class="about__description">
+                        '식물을 정직하게' 라는 모티브를 가지고 누구나 쉽게 식물을 키울 수 있도록 도와드립니다. <br> 거짓을 더하지 않고 진실만을 보여드리고자 노력합니다.
+                    </p>
+
+                    <div class="about__details">
+                        <p class="about__details-description">
+                            <i class="fa-solid fa-square-check about__details-icon"></i>
+                            영농조합과 함께하는 정직한 가격
+                        </p>
+                        <p class="about__details-description">
+                            <i class="fa-solid fa-square-check about__details-icon"></i>
+                            매일매일 농민 분들께서 직접 길러 건강한 식물들 보유
+                        </p>
+                        <p class="about__details-description">
+                            <i class="fa-solid fa-square-check about__details-icon"></i>
+                            오랜 노하우로 건강한 식물을 가장 안전하게 배송 
+                        </p>
+                        <p class="about__details-description">
+                            <i class="fa-solid fa-square-check about__details-icon"></i>
+                            식물 수급, 분갈이, 포장, 그리고 발송 품목 설정까지
+                        </p>
+                    </div>
+
+                    <a href="#" class="button--link button--flex">
+                        Shop Now <i class="fa-solid fa-arrow-right  button__icon"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- END ABOUT -->
+
+        <!-- STEPS  -->
+        <section class="steps section container">
+            <div class="steps__bg">
+                <h2 class="section__title-center steps__title">
+                    관리 어렵지 않아요<br> 3단계만 지켜주세요
+                </h2>
+
+                <div class="steps__container grid">
+                    <div class=" steps__card">
+                        <div class="steps__card-number">01</div>
+                        <h3 class=" steps__card-title">햇빛을 많이 쬐게 하세요.</h3>
+                        <p class="steps__card-description">
+                            실내 식물을 기를 때 가장 신경 써야 하는 것 중 하나는 햇빛을 충분히 쬐게 하는 겁니다.
+                        </p>
+                    </div>
+
+                    <div class=" steps__card">
+                        <div class="steps__card-number">02</div>
+                        <h3 class=" steps__card-title">주기적으로 물을 주세요. </h3>
+                        <p class="steps__card-description">
+                            흙이 촉촉한 상태로 유지되게끔 분무기 또는 작은 물뿌리개를 사용해서 매번 충분한 양의 물을 뿌려주세요.
+                        </p>
+                    </div>
+
+                    <div class=" steps__card">
+                        <div class="steps__card-number">03</div>
+                        <h3 class=" steps__card-title">몇 주마다 한 번씩 비료를 주세요</h3>
+                        <p class="steps__card-description">
+                          비료는 식물에게 영양분을 공급해주는 토양 첨가제입니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- STEPS  -->
+
+        <!-- PRODUCTS -->
+        <section class="product section container" id="product">
+            <h2 class="section__title-center">
+                다양한 식물<br> 식물의 특징까지 확인해 보세요
+            </h2>
+
+            <p class="product__description">
+                소개해드리는 식물들은 관리수준과 요구 등급에서 쉬움과 낮음을 기록하고 있어, 식물에 대해 잘 모른다고 하더라도 건강한 잎을 관상하고 상쾌한 공기정화 효과를 얻을 수 있습니다.
+            </p>
+
+            <div class="product__container grid">
+                <article class="product__card">
+                    <img src="./assets/img/product1.jpg" alt="" class="product__img">
+
+                    <h3 class="product__title">스투키</h3>
+                    <span class="product__price">35,000</span>
+
+                    <button class="button--flex product__button">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </button>
+                </article>
+
+                <article class="product__card">
+                    <img src="./assets/img/product2.jpg" alt="" class="product__img">
+
+                    <h3 class="product__title">크루시아</h3>
+                    <span class="product__price">35,000</span>
+
+                    <button class="button--flex product__button">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </button>
+                </article>
+
+                <article class="product__card">
+                    <img src="./assets/img/product3.jpg" alt="" class="product__img">
+
+                    <h3 class="product__title">콤팩타</h3>
+                    <span class="product__price">35,000</span>
+
+                    <button class="button--flex product__button">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </button>
+                </article>
+
+                <article class="product__card">
+                    <img src="./assets/img/product4.jpg" alt="" class="product__img">
+
+                    <h3 class="product__title">해피트리</h3>
+                    <span class="product__price">35,000</span>
+
+                    <button class="button--flex product__button">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </button>
+                </article>
+
+                <article class="product__card">
+                    <img src="./assets/img/product5.jpg" alt="" class="product__img">
+
+                    <h3 class="product__title">산데리아나 골드</h3>
+                    <span class="product__price">35,000</span>
+
+                    <button class="button--flex product__button">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </button>
+                </article>
+
+                <article class="product__card">
+                    <img src="./assets/img/product6.jpg" alt="" class="product__img">
+
+                    <h3 class="product__title">싱고니움</h3>
+                    <span class="product__price">35,000</span>
+
+                    <button class="button--flex product__button">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </button>
+                </article>
+            </div>
+        </section>
+        <!-- END PRODUCTS -->
+
+        <!-- QUESTIONS-->
+        <section class="questions section" id="faqs">
+            <h2 class="section__title-center questions__title container">
+                대표적인 질문
+            </h2>
+
+            <div class="questions__container container grid">
+                <div class="questions__group">
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="fa-solid fa-plus questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                햇빛은 얼마만큼 받아야 하나요?
+                            </h3>
+                        </header>
+
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                본인이 기르는 식물이 햇빛을 얼마나 쬐야 하는지 확인하세요. 필요한 일조량에 맞게 적당한 곳으로 옮기세요. 남향 창문이 햇빛을 가장 많이 받고 북향 창문이 햇빛을 가장 적게 받는다는 점을 유념하세요.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="fa-solid fa-plus questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                물 양을 못 맞추겠어요
+                            </h3>
+                        </header>
+
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                손가락을 2마디 정도 넣어서 흙이 얼마나 축축한지 확인하세요. 손가락을 다시 뺏을 때 건조할 경우 물을 줘야 합니다. 만약 손가락이 완전 젖었다면 하루 또는 이틀 동안 물을 주지 마세요.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="fa-solid fa-plus questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                먼지를 자주 제거해줘야하나요 ?
+                            </h3>
+                        </header>
+
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                먼지가 쌓이면 미관상 안 좋을 뿐 아니라 잎의 ‘숨구멍’을 막기 때문에 성장에 방해가 됩니다. 그래서 주기적으로 먼지를 제거해주는 게 중요합니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="questions__group">
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="fa-solid fa-plus questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                식물 심을때 주의사항이 있나요?
+                            </h3>
+                        </header>
+
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                식물 뿌리가 흙 표면과 가까워야지 표토에 있는 모든 영양분을 흡수하고 햇빛을 받을 수 있습니다. 조심스럽게 식물을 흙 밖으로 파낸 뒤 뿌리 덩어리가 흙 표면에(또는 바로 밑에) 묻히게끔 다시 심으세요.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="fa-solid fa-plus questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                주변에 잡초가 생기는데 괜찮나요?
+                            </h3>
+                        </header>
+
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                잡초는 보기에도 안 좋을 뿐 아니라 식물이 자랄 수 있는 소중한 공간을 차지하고 흙 속에 있는 영양분을 뺏어갑니다. 잡초가 자란 걸 발견할 때마다 잡초를 뽑으세요.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="fa-solid fa-plus questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                뿌리덮개는 꼭 해야하나요?
+                            </h3>
+                        </header>
+
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                뿌리 덮개를 사용하면 영양분을 추가로 공급하고 잡초를 억제할 수 있다는 장점이 있지만 너무 많이 사용할 경우 정원에 문제가 발생할 수 있습니다. 왜냐하면 뿌리 덮개는 잡초만 억제하는 게 아니라 흙 표면 위를 뚫고 올라오는 식물의 새로운 성장을 방해하기 때문입니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END QUESTIONS-->
+
+        <!-- CONTACT -->
+        <section class="contact section container" id="contact">
+            <div class="contact__container grid">
+                <div class="contact__box">
+                    <h2 class="section__title">
+                       궁금한게 있으시면<br>언제든<br>문의해주세요. 
+                    </h2>
+                    <div class="contact__data">
+                        <div class="contact__information">
+                            <h3 class="contact__subtitle">고객 서비스 전화 문의</h3>
+                            <span class="contact__description">
+                                <i class="fa-solid fa-phone contact__icon"></i>
+                                +999 888 777
+                            </span>
+                        </div>
+
+                        <div class="contact__information">
+                            <h3 class="contact__subtitle">고객 서비스 이메일 문의</h3>
+                            <span class="contact__description">
+                                <i class="fa-solid fa-envelope"></i>
+                                user@email.com
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="contact__form">
+                    <div class="contact__inputs">
+                        <div class="contact__content">
+                            <input type="email" placeholder=" " class="contact__input">
+                            <label for="" class="contact__label">Email</label>
+                        </div>
+
+                        <div class="contact__content">
+                            <input type="text" placeholder=" " class="contact__input">
+                            <label for="" class="contact__label">Subject</label>
+                        </div>
+
+                        <div class="contact__content contact__area">
+                            <textarea name="message" placeholder=" " class="contact__input"></textarea>                              
+                            <label for="" class="contact__label">Message</label>
+                        </div>
+                    </div>
+
+                    <button class="button button--flex">
+                        메세지 보내기
+                        <i class="fa-solid fa-arrow-right button__icon"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+        <!-- END ONTACT -->
+
+        <!-- FOOTER -->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">
+                        <i class="fa-solid fa-clover nav__logo-icon"></i> Plantex
+                    </a>
+
+                    <h3 class="footer__title">
+                        구독하시면 <br> 다양한 정보를 얻으실 수 있습니다.
+                    </h3>
+
+                    <div class="footer__subscribe">
+                        <input type="email" placeholder="Enter your email" class="footer__input">
+
+                        <button class="button button--flex footer__button">
+                            구독
+                            <i class="fa-solid fa-arrow-right button__icon"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Address</h3>
+
+                    <ul class="footer__data">
+                        <li class="footer__information">1234 - seoul</li>
+                        <li class="footer__information">sadang - 43210</li>
+                        <li class="footer__information">123-456-789</li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Contact Us</h3>
+
+                    <ul class="footer__data">
+                        <li class="footer__information">+999 888 777</li>
+                        
+                        <div class="footer__social">
+                            <a href="https://www.facebook.com/" class="footer__social-link">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" class="footer__social-link">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://twitter.com/" class="footer__social-link">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        We accept all credit cards
+                    </h3>
+
+                    <div class="footer__cards">
+                        <img src="assets/img/card1.png" alt="" class="footer__card">
+                        <img src="assets/img/card2.png" alt="" class="footer__card">
+                        <img src="assets/img/card3.png" alt="" class="footer__card">
+                        <img src="assets/img/card4.png" alt="" class="footer__card">
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- END FOOTER -->
+
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class="fa-solid fa-arrow-up scrollup__icon"></i>
+        </a>
+    </main>
+
+    <!-- scroll.js -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- main js -->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
